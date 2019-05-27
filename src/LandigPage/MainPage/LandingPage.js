@@ -1,8 +1,8 @@
 import React from 'react'
 import './LandingPage.css'
-import Camara from '../Imagenes/camara1.png';
-import Ruta from '../Imagenes/rutas1.png';
-import Actividad from '../Imagenes/actividad1.png';
+import Camara from '../../Imagenes/camara1.png';
+import Ruta from '../../Imagenes/rutas1.png';
+import Actividad from '../../Imagenes/actividad1.png';
 
 function LandingPage(){
     return(
