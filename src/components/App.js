@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from '../resources/logo.svg';
+//import logo from '../resources/logo.svg';
 import '../styles/App.css';
+import LoginPage from '../components/LoginPage';
 import {Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
+      {/** 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,7 +24,10 @@ function App() {
         </a>
         <Link to= '/places'>Ingresar a Lugares</Link>
         <Link to= '/routes'>Ingresar a Rutas</Link>
-      </header>
+        
+      </header>*/}
+        <LoginPage/>
+        
     </div>
   );
 }

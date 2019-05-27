@@ -7,7 +7,8 @@ function PruebaLugares() {
         
       </header>
       <label>pagina de lugares</label>
-    </div>
+      
+    </div>    
   );
 }
 
