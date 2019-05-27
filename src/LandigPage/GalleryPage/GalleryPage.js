@@ -33,47 +33,47 @@ function GalleryPage(){
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto2}  width="150" height="75"></img>
+                        <img src={Foto2} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto4}  width="150" height="75"></img>
+                        <img src={Foto4} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  width="150" height="75"></img>
+                        <img src={Foto1}  alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
