@@ -21,18 +21,21 @@
     padding:         15px;
     border-radius:   20px;
     margin-right:    20px;
+    border: 3px solid #EEE5E9;
 }
 
 .BotonIniciarSesion:hover{
     text-decoration: none;
     background: #92DCE5;
-    color:      #2B303A ;
+    color:      #2B303A;
 }
 
 .BotonIniciarSesion:active{
     text-decoration: none;
     background: #D64933;
     color:      #92DCE5;
+    border: 5px solid #EEE5E9;
+    
 }
 
 
@@ -43,6 +46,7 @@
     padding:         15px;
     border-radius:   20px;
     margin-right:    20px;
+    border: 3px solid #EEE5E9;
 }
 
 .BotonCrearCuenta:hover{
@@ -55,6 +59,7 @@
     text-decoration: none;
     background: #92DCE5;
     color:      #2B303A;
+    border: 5px solid #EEE5E9;
 }
 
 
@@ -79,7 +84,7 @@
     color:      #7C7C7C;
     border: 7px solid #EEE5E9;
     width:          450px;
-    height:         550px;
+    height:         500px;
     border-radius:   25px;
     margin: 10px 20px 10px 20px;
     flex-shrink: 0;
@@ -105,7 +110,7 @@
     background: #EEE5E9;
     color: #2B303A;
     border: 10px solid #92DCE5;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -116,8 +121,10 @@
 
 .Universidad{
     color: #D64933;
+    margin: 0px 0px 5px 0px;
 }
 
 .Materia{
     color: #2B303A;
+    margin: 5px 0px 0px 0px;
 }

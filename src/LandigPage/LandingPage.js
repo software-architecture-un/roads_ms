@@ -1,8 +1,8 @@
 import React from 'react'
 import './LandingPage.css'
-import Camara from './imagenes/camara1.png';
-import Ruta from './imagenes/rutas1.png';
-import Actividad from './imagenes/actividad1.png';
+import Camara from '../Imagenes/camara1.png';
+import Ruta from '../Imagenes/rutas1.png';
+import Actividad from '../Imagenes/actividad1.png';
 
 function LandingPage(){
     return(
@@ -23,7 +23,7 @@ function LandingPage(){
                     <img  src={ Camara } width="250" height="250" alt="Imagen_Camara"></img>
                     <div className="TextoJustificado">
                         <p>En nuestra galeria podras las fotos que mas les han gustado a nuestros usuarios.</p>
-                        <p>Animate a formar parte de nustra gran comunidad de caminantes, viajeros, entre otos y empieza a compartir las fotos de los lugares que mas te han gustado.</p>
+                        <p>Muestranos como ves el mundo.</p>
                     </div>
                 </div>
 
@@ -48,8 +48,8 @@ function LandingPage(){
             </div>
 
             <div className="FooterLandig">
-                    <h5 className="Universidad">Universidad Nacional De Colombia</h5>
-                    <h6 className="Materia">Arquitecura De software</h6> 
+                    <h3 className="Universidad">Universidad Nacional De Colombia</h3>
+                    <h4 className="Materia">Arquitecura De software</h4> 
             </div>
 
         </div>
