@@ -6,6 +6,7 @@ function PruebaLugares() {
       <header className="PruebaLugares-header">
         
       </header>
+      <label>pagina de lugares</label>
     </div>
   );
 }

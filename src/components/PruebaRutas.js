@@ -6,6 +6,7 @@ function PruebaRutas() {
       <header className="PruebaRutas-header">
         
       </header>
+      <label>pagina de rutas</label>
     </div>
   );
 }
