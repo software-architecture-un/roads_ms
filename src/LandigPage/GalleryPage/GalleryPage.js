@@ -6,14 +6,13 @@ import Foto2 from '../../Imagenes/foto2.jpg';
 import Foto4 from '../../Imagenes/foto4.jpg';
 
 
-function GalleryPage(){
-    return(
+function GalleryPage() {
+    return (
         <div className="LandingPage">
-            
+
             <div className="HeaderLandig">
                 <div className="PosicionBotones">
                     <a className="BotonIniciarSesion" href="/#"> Iniciar sesion </a>
-                    
                     <a className="BotonCrearCuenta" href="/#"> Crear cuenta </a>
                 </div>
                 <h1 className="TituloLanding"> Senderos UN </h1>
@@ -21,8 +20,8 @@ function GalleryPage(){
 
             <div className="BodyGalleryLandig">
                 <h2 className="TituloGaleria">Galeria De Fotos</h2>
-                
-{/* ==============================================================================
+
+                {/* ==============================================================================
 ============================================================================== */}
 
                 <div className="ListaFotos">
@@ -73,22 +72,22 @@ function GalleryPage(){
                     </div>
 
                     <div className="CajaImagen">
-                        <img src={Foto1}  alt="Imagen Temporal" width="150" height="75"></img>
+                        <img src={Foto1} alt="Imagen Temporal" width="150" height="75"></img>
                         <p>Este es un texto de prueba para la imagen</p>
                     </div>
 
 
 
-                    
-{/* ==============================================================================
+
+                    {/* ==============================================================================
 ============================================================================== */}
 
                 </div>
             </div>
 
             <div className="FooterLandig">
-                    <h3 className="Universidad">Universidad Nacional De Colombia</h3>
-                    <h4 className="Materia">Arquitecura De software</h4> 
+                <h3 className="Universidad">Universidad Nacional De Colombia</h3>
+                <h4 className="Materia">Arquitecura De software</h4>
             </div>
 
         </div>

@@ -1,9 +1,10 @@
-import React from "react";
-import "./ActivitiesPage.css";
-import "../MainPage/LandingPage.css";
-import Moto from "../../Imagenes/moto3.png";
-import Gym from "../../Imagenes/gym3.png";
-import Arte from "../../Imagenes/arte3.png";
+import React from 'react';
+import './ActivitiesPage.css';
+import '../MainPage/LandingPage.css';
+import Moto from '../../Imagenes/moto3.png';
+import Arte from '../../Imagenes/arte3.png';
+import Gym from '../../Imagenes/gym3.png';
+
 
 function GalleryPage() {
   return (
