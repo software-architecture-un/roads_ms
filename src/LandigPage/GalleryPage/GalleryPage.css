@@ -2,14 +2,14 @@
 .BodyGalleryLandig{
     border: 10px solid #EEE5E9;
     border-radius: 25px 25px 25px 25px; 
-    margin: 0 10% 0 10%;
+    margin: 0 10% 20px 10%;
 }
 
 .TituloGaleria{
     color: #92DCE5;
     font-size: 0.5in;
     margin: 20px 0px 20px 0px;
-    justify-content:; 
+    /* sjustify-content:;  */
 }
 
 .ListaFotos{
