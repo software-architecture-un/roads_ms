@@ -35,7 +35,7 @@
     background: #D64933;
     color:      #92DCE5;
     border: 5px solid #EEE5E9;
-    
+    transform:  scale(0.95);
 }
 
 
@@ -60,6 +60,7 @@
     background: #92DCE5;
     color:      #2B303A;
     border: 5px solid #EEE5E9;
+    transform:  scale(0.95);
 }
 
 
@@ -112,6 +113,7 @@
     border: 10px solid #92DCE5;
     padding: 10px 0px 10px 0px;
     border-radius: 25px 25px 0px 0px;
+    margin: 0 10% 0 10%;
 }
 
 
