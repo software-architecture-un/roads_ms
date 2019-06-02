@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './components/App';
-import PruebaLugares from './components/PruebaLugares';
-import PruebaRutas from './components/PruebaRutas';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Route} from 'react-router-dom';
 
@@ -11,8 +11,8 @@ ReactDOM.render(
 <BrowserRouter>
     <div>
         <Route exact path='/' component={App}/>        
-        <Route exact path='/places' component={PruebaLugares}/>
-        <Route exact path='/routes' component={PruebaRutas}/>        
+        <Route exact path='/registro' component={RegisterPage}/>
+        <Route exact path='/login' component={LoginPage}/>        
     </div>
 </BrowserRouter>, document.getElementById('root'));
 

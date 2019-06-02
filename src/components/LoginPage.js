@@ -8,14 +8,15 @@ function LoginPage() {
         <h1>Iniciar Sesión</h1>  
         <form>
             {/**USERNAME */}
-            <label for= "username">Usuario</label>
+            <label htmlFor= "username">Usuario</label>
             <input type="text" placeholder="Ingresar usuario"/>
 
             {/**PASSWORD  */}
-            <label for= "password">Contraseña</label>
+            <label htmlFor= "password">Contraseña</label>
             <input type="password" placeholder="Ingresar contraseña"/>
 
-            <input type= "submit" value="Acceder"/> 
+            <input className="btn-login" type= "submit" value="Acceder"/> 
+            <input className="btn-volver" type= "submit" value="Volver"/>
 
             {/** <a href= "#">Lost your password</a>
             <a href= "#">Don't have an account?</a>*/}
