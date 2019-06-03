@@ -1,8 +1,9 @@
 import React from 'react'
 import './LandingPage.css'
-import Camara from '../../Imagenes/camara1.png';
-import Ruta from '../../Imagenes/rutas1.png';
-import Actividad from '../../Imagenes/actividad1.png';
+import Camara from '../../imagenes/camara1.png';
+import Ruta from '../../imagenes/rutas1.png';
+import Actividad from '../../imagenes/actividad1.png';
+import {Link} from 'react-router-dom';
 
 function LandingPage(){
     return(
@@ -10,9 +11,9 @@ function LandingPage(){
             
             <div className="HeaderLandig">
                 <div className="PosicionBotones">
-                    <a className="BotonIniciarSesion" href="/#"> Iniciar sesion </a>
+                    <a className="BotonIniciarSesion" href="/#"> <Link to= '/login'>Iniciar sesion</Link> </a>
                     
-                    <a className="BotonCrearCuenta" href="/#"> Crear cuenta </a>
+                    <a className="BotonCrearCuenta" href="/#"> <Link to= '/registro'>Crear cuenta</Link> </a>
                 </div>
                 <h1 className="TituloLanding"> Senderos UN </h1>
             </div>
