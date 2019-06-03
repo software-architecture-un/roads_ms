@@ -62,10 +62,20 @@
     padding: 9% 0px 0px 0px;
 }
 
-.ObjetivoMenuLateral{
-    border-radius: 0px 0px 20px 20px;
-    margin: 270px 0px 0px 50px;
-    border: 5px solid #EEE5E9;
-    width: 108000px;
-    height: 580px;
+.ContenedorOpcionDatosPersonales{
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0px 0px 0px 50px;
+}
+
+.TituloDatosPersonales{
+    /* align-items: center; */
+}
+
+.ContenedorDatosPersonales{
+   margin: 150px 0px 0px 0px;
+}
+
+.BotonesModificarDatos{
+
 }
