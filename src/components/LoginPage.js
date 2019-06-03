@@ -8,8 +8,8 @@ function LoginPage() {
         <h1>Iniciar Sesión</h1>  
         <form>
             {/**USERNAME */}
-            <label htmlFor= "username">Usuario</label>
-            <input type="text" placeholder="Ingresar usuario"/>
+            <label htmlFor= "email">Correo electrónico</label>
+            <input type="text" placeholder="Ingresar correo"/>
 
             {/**PASSWORD  */}
             <label htmlFor= "password">Contraseña</label>
