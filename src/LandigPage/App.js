@@ -5,7 +5,7 @@ import './App.css';
 import LandingPage from '../LandigPage/MainPage/LandingPage'
 // import GalleryPage from '../LandigPage/GalleryPage/GalleryPage';
 // import ActivitiesPage from '../LandigPage/ActivitiesPage/ActivitiesPage';
-import UserPage from '../UserPage/UserPage';
+// import UserPage from '../UserPage/UserPage';
 
 function App() {
   return (
