@@ -6,10 +6,7 @@ function App() {
   return (
     <div className="App">   
      
-      <LandingPage/>
-        
-      {/* <Register/> */}
-      {/* <LoginPage/> */}
+      <LandingPage/>          
         
     </div>
   );
