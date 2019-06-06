@@ -1,0 +1,183 @@
+.Register {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: #7C7C7C;
+  }
+  
+  .forma-registro {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    /* box-shadow: 0px 10px 50px #2B303A; */
+    background-color: #2B303A;
+    
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .titulo{
+    text-align: center;
+    width: 100%;
+    color: #D64933;
+    font-size: 30px;
+    /* font-weight: lighter; */
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: sans-serif;
+  }
+  
+  label {
+    font-size: 0.8em;
+    margin-bottom: 0.25em;
+    color: #92DCE5;
+    font-weight: lighter;
+  }
+  
+  input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #EEE5E9;
+    border: none;
+    /* background: transparent; */
+    outline: none;
+    border: 2px solid #EEE5E9;
+    color: #2B303A;
+  }
+  
+  select {
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #EEE5E9;
+    background: #EEE5E9;
+  }
+  
+  input::placeholder {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #7C7C7C;
+  }
+  
+  input.error {
+    border: 1px solid red;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 0.75em;
+    display: relative;
+  }
+  
+  .edad {
+    margin-right: 1%;
+  }
+  
+  .genero {
+    margin-left: 1%;
+  }
+  
+  .nombres,
+  .documento,
+  .genero,
+  .edad,
+  .correo,
+  .contrasena {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .nombres,
+  .documento {
+    width: 100%;
+  }
+  
+  .edad,
+  .genero{
+    width: 49%;
+  }
+  
+  .correo,
+  .contrasena {
+    width: 100%;
+  }
+  
+  .createAccount {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .volver {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .createAccount {
+    font-family: 'Russo One', sans-serif;
+    margin: auto;
+    text-decoration: none;
+    background: #92DCE5;
+    color:      #2B303A;
+    padding:         5px;
+    border-radius:   20px;
+    margin-right:    20px;
+    border: 3px solid #EEE5E9;
+    font-size: 20px;
+  }
+  
+  .createAccount:hover {
+    text-decoration: none;
+    background: #92DCE5;
+    color:      #2B303A;
+  }
+  
+  .createAccount:active{
+    text-decoration: none;
+    background: #D64933;
+    color:      #92DCE5;
+    border: 4px solid #EEE5E9;
+    transform:  scale(0.95);
+  }
+  
+  .volver {
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    background: #D64933;
+    color:      #92DCE5;
+    padding:         5px;
+    border-radius:   20px;
+    margin-right:    20px;
+    margin-top: 10px;
+    border: 3px solid #EEE5E9;
+    font-size: 20px;
+    width: 364px;
+    height: 25px;
+  }
+  
+  .volver:hover {
+    text-decoration: none;
+    background: #D64933;
+    color:      #92DCE5;
+  }
+
+  .volver:active{
+    text-decoration: none;
+    background: #92DCE5;
+    color:      #2B303A;
+    border: 5px solid #EEE5E9;
+    transform:  scale(0.95);
+  }

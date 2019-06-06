@@ -10,9 +10,9 @@ function LandingPage() {
 
             <div className="HeaderLandig">
                 <div className="PosicionBotones">
-                    <a className="BotonIniciarSesion" href="/#"> Iniciar sesion </a>
+                    <a className="BotonIniciarSesion" href="/login"> Iniciar sesion </a>
 
-                    <a className="BotonCrearCuenta" href="/#"> Crear cuenta </a>
+                    <a className="BotonCrearCuenta" href="/registro"> Crear cuenta </a>
                 </div>
                 <h1 className="TituloLanding"> Senderos UN </h1>
             </div>
