@@ -17,7 +17,7 @@ import TrailsPage from './LandigPage/TrailsPage';
 
 ReactDOM.render(
     <BrowserRouter>
-        <Route exact path='/landing' component={App} />
+        <Route exact path='/' component={App} />
         <Route exact path='/login' component={LoginPage} />
         <Route exact path='/registro' component={RegisterPage} />
         <Route exact path='/galeria' component={GalleryPage} />
