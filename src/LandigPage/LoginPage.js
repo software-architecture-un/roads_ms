@@ -17,7 +17,7 @@ function LoginPage() {
                 </div>
 
                 <div className="BotonesEntrarVolver">
-                    <a className="BotonEntrar" href="/">Entrar</a>
+                    <a className="BotonEntrar" href="/usuario">Entrar</a>
                     <a className="BotonRegresar" href="/landing">Volver</a>
                 </div>
             </div>

@@ -1,0 +1,19 @@
+.UserPage {
+    background: red;
+}
+
+.ModificacionDatosPersonales {
+    display: flex;
+    flex-direction: row;
+}
+
+.LabelsDatosPersonales {
+    display: flex;
+    flex-direction: row;
+}
+
+.InputsDatosPersonales {
+    display: flex;
+    flex-direction: row;
+    
+}

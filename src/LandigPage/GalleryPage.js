@@ -3,12 +3,16 @@ import './GalleryPage.css';
 import Foto1 from '../imagenes/foto1.jpg';
 import Foto2 from '../imagenes/foto2.jpg';
 import Foto4 from '../imagenes/foto4.jpg';
+import Regresar from '../imagenes/back2.png';
 
 function GalleryPage() {
     return (
         <div className="GalleryPage">
 
             <div className="BotonesLoginRegistro">
+                <a href="/landing" className="Regresar">
+                    <img src={Regresar} alt="ImagenRegresar" width="100" height="100" />
+                </a>
                 <a className="IniciarSesionMainPage" href="/login">Iniciar sesion</a>
                 <a className="CrearCuentaMainPage" href="/registro">Crear cuenta</a>
             </div>

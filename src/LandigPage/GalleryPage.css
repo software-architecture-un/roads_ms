@@ -6,6 +6,10 @@
     font-family: 'Days One', sans-serif;
 }
 
+.Regresar{
+    margin-left: 100px;
+    margin-right: 60%;
+}
 
 .ListaFotos{
     display: flex;

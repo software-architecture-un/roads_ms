@@ -6,6 +6,11 @@
     font-family: 'Days One', sans-serif;
 }
 
+.Regresar{
+    margin-left: 100px;
+    margin-right: 60%;
+}
+
 .ListaRutas {
     display: flex;
     flex-wrap: wrap;
@@ -19,10 +24,20 @@
     border-radius: 20px;
     border: 4px solid #EEE5E9;
     margin: 20px;
-    /* padding-top: 20px; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+
+.TextoInformacion {
+    text-align: left;
+}
+
+.LabelRuta, .LabelOrigen, .LabelDestino {
+    color: #D64933;
+}
+
+.TextoOrigen, .TextoDestino {
+    color: #92DCE5;
 }
 
 .ImagenRuta {
