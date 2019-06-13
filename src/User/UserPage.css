@@ -2,18 +2,18 @@
     background: red;
 }
 
-.ModificacionDatosPersonales {
+/* .ModificacionDatosPersonales {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .LabelsDatosPersonales {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .InputsDatosPersonales {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
