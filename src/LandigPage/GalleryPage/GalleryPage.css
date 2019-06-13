@@ -1,0 +1,46 @@
+
+.BodyGalleryLandig{
+    border: 10px solid #EEE5E9;
+    border-radius: 25px 25px 25px 25px; 
+    margin: 0 10% 20px 10%;
+}
+
+.TituloGaleria{
+    color: #92DCE5;
+    font-size: 0.5in;
+    margin: 20px 0px 20px 0px;
+    /* sjustify-content:;  */
+}
+
+.ListaFotos{
+    border-top: 10px solid #EEE5E9;
+    background: #7C7C7C;
+    padding: 30px 30px 30px 30px; 
+    border-radius: 0px 0px 15px 15px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.CajaImagen{
+    background: #EEE5E9; 
+    color: #2B303A;
+    width: 350px;
+    height: 100px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 20px 15px 25px 15px;
+    border: 10px solid #D64933;
+    margin: 25px 25px 25px 25px;
+}
+
+.CajaImagenTest{
+    background: url("../../Imagenes/foto4.jpg");
+    background-size: cover;
+    color: #2B303A;
+    width: 350px;
+    height: 100px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 20px 15px 25px 15px;
+    border: 10px solid #D64933;
+    margin: 25px 25px 25px 25px;
+}

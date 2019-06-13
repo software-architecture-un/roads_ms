@@ -1,13 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
+import LandingPage from '../LandigPage/MainPage/LandingPage'
 
 function App() {
   return (
-    <div className="App">
-         
-      <Link to= '/login'>Login</Link>
-      <br/>
-      <Link to= '/registro'>Crear cuenta</Link>
+    <div className="App">   
+     
+      <LandingPage/>
         
       {/* <Register/> */}
       {/* <LoginPage/> */}

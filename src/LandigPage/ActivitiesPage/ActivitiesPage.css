@@ -1,0 +1,52 @@
+.BodyActivityLandig{
+    border: 10px solid #EEE5E9;
+    border-radius: 25px 25px 25px 25px; 
+    margin: 0 10% 20px 10%;
+    min-width: 700px;
+}
+
+.TituloActividades{
+    color: #92DCE5;
+    font-size: 0.5in;
+    margin: 20px 0px 20px 0px;
+}
+
+.ListaActividades{
+    border-top: 10px solid #EEE5E9;
+    background: #7C7C7C;
+    padding: 30px 30px 30px 30px; 
+    border-radius: 0px 0px 15px 15px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.CajaActividad{
+    padding:       10px 10px 10px 10px;
+    border-radius: 25px 25px 25px 25px;
+    margin:         0px  20px  20px  20px;
+    background: white;
+    width: 600px;
+    height: 150px;
+    display: inherit;
+    flex-wrap: inherit;
+    flex-shrink: 0;
+}
+
+.ImagenTarjeta{
+    background: #D64933;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 5px 0px 0px;
+    width:  150px;
+    height: 150px;
+}
+
+.TextoTarjeta{
+    color: #2B303A;
+    background: #92DCE5;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 5px;
+    width:  440px;
+    height: 150px;
+}
