@@ -2,10 +2,11 @@ import React from 'react';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from 'react-apollo';
 import MainPage from './LandigPage/MainPage';
-import AllUsers from './enpoints/AllUsers';
+import AllUsers from './endpoints/users/AllUsers';
+import AllPlaces from './endpoints/places/AllPlaces';
 
 const client = new ApolloClient({
-  uri: 'http://35.232.93.124:5500/graphql'
+  uri: 'http://192.168.99.101:5500/graphql'
 });
 
 // const App = () => (
@@ -22,7 +23,10 @@ function App() {
       <ApolloProvider client={client}>
         <div>
           <h2>Mi primer aplicacion apollo en react</h2>
+          <h1>TODOS LOS USUARIOS</h1>
           <AllUsers/>
+          <h1>TODOS LOS LUGARES</h1>
+          <AllPlaces/>
         </div>
       </ApolloProvider>
       {/* <MainPage /> */}
