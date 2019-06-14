@@ -4,6 +4,8 @@ import Foto1 from '../imagenes/foto1.jpg';
 import Foto2 from '../imagenes/foto2.jpg';
 import Foto4 from '../imagenes/foto4.jpg';
 import Regresar from '../imagenes/back2.png';
+import ContenedorImagenGaleria from './ContenedorImagenGaleria';
+
 
 function GalleryPage() {
     return (
@@ -17,46 +19,20 @@ function GalleryPage() {
                 <a className="CrearCuentaMainPage" href="/registro">Crear cuenta</a>
             </div>
 
-
             <div>
                 <h1 className="TituloGaleria">Galería</h1>
             </div>
 
-
             <div className="ListaFotos">
 
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto1} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
+                <ContenedorImagenGaleria MyImage={Foto1} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
+                <ContenedorImagenGaleria MyImage={Foto4} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
+                <ContenedorImagenGaleria MyImage={Foto1} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
+                <ContenedorImagenGaleria MyImage={Foto2} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
+                <ContenedorImagenGaleria MyImage={Foto1} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
+                <ContenedorImagenGaleria MyImage={Foto4} TituloImagen="Galaxia 3" MyWidth="350" MyHeight="250" />
 
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto4} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
-
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto1} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
-
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto2} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
-
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto1} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
-
-                <div className="CajaImagen">
-                    <img className="ImagenTemporal" src={Foto4} alt="Imagen Temporal" width="350" height="250"></img>
-                    <p className="LabelImagen">Galaxia 3</p>
-                </div>
             </div>
-
-
 
             <div className="FooterMainPage">
                 <h4 className="FooterH4">UNIVERSIDAD NACIONAL DE COLOMBIA</h4>
