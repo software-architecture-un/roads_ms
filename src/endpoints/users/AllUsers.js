@@ -1,9 +1,9 @@
 import React from 'react';
 import {Query} from 'react-apollo';
-import gpl from 'graphql-tag';
+import gql from 'graphql-tag';
 
 const AllUsers = () => (
-  <Query query={gpl`
+  <Query query={gql`
     {
       allUsers {
         content {
