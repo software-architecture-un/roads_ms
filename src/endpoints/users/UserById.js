@@ -9,7 +9,6 @@ function UserById() {
       <Query
           query={gpl`
             {
-              query {
                 userById(id: 1) {
                   content {
                     name
@@ -20,7 +19,7 @@ function UserById() {
                   }
                   message
                 }
-              }
+              
             }
           `}
         >
@@ -30,8 +29,7 @@ function UserById() {
 
             return data.userById.message.map(({ message }) => (
               <div key={message}>
-                <p>{message}</p>
-
+               
               </div>
             ));
           }}
