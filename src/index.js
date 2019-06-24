@@ -17,7 +17,7 @@ import RegisterPage from './LandigPage/RegisterPage';
 
 ReactDOM.render(
     <BrowserRouter>
-        <Route exact path='/landing' component={App} />
+        <Route exact path='/' component={App} />
         <Route exact path='/login' component={LoginPage} />
         <Route exact path='/rutas' component={TrailsPage} />
         <Route exact path='/usuario' component={UserPage} />
