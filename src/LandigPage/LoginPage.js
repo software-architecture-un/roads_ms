@@ -57,7 +57,7 @@ class LoginPage extends React.Component{
 
                 <div className="ContenedorCamposLogin">
                     <label className="LabelUsuario">Usuario:</label>
-                    <input name="CampoUsuario" onChange={this.handleChange} className="InputUsuario"  value={this.state.CampouUario} type="text"></input>
+                    <input name="CampoUsuario" onChange={this.handleChange} className="InputUsuario"  value={this.state.CampoUsuario} type="text"></input>
                     <br />
                     <label className="LabelPassword">Contraseña:</label>
                     <input name="CampoPassword" onChange={this.handleChange} className="InputPassword" value={this.state.CampoPassword} type="password"></input>
@@ -75,5 +75,5 @@ class LoginPage extends React.Component{
 
 
 export default LoginPage;
-// href="/usuario"
 
+// href="/usuario"
