@@ -5,6 +5,7 @@ import DirectionGraphq from '../conection/IpGraphql';
 class RegisterPage extends React.Component {
 
     state = {
+        // CampoEdad:0
     }
 
     handleClick = e => {
@@ -12,14 +13,15 @@ class RegisterPage extends React.Component {
         console.log("=====================================================================")
         console.log("--> ESTO ES PARA REGISTRARSE")
 
+       
         const query = `
             mutation {
                 createUser(user: {
-                    name:"${this.state.CampoNombre}"
-                    document:"${this.state.CampoDocumento}"
-                    age:${this.state.CampoEdad}
-                    email: "${this.state.CampoEmail}"
-                    password: "${this.state.CampoPassword}"
+                name:"${this.state.CampoNombre}"
+                document:"${this.state.CampoIdentificacion}"
+                age:${this.state.CampoEdad}
+                email: "${this.state.CampoEmail}"
+                password: "${this.state.CampoPassword}"
                 }) {
                 content {
                     name
@@ -46,6 +48,8 @@ class RegisterPage extends React.Component {
             .then(console.log)
             .catch(console.error);
         console.log("=====================================================================\n\n")
+
+        e.preventDefault();
     }
 
     handleChange = e => {
@@ -53,6 +57,10 @@ class RegisterPage extends React.Component {
             [e.target.name]: e.target.value,
         })
 
+    }
+
+    handleCrearCuenta = e => {
+        e.preventDefault();
     }
 
     render() {
@@ -69,33 +77,33 @@ class RegisterPage extends React.Component {
                         <br />
                         <label className="LabelRegistroIdentificacion">Identificación:</label>
                         <br />
-                        <input onChange={this.handleChange} name="CampoIdentificacion" className="InputRegistroIdentificacion" type="number" value={this.state.CampoIdentificacion} />
+                        <input onChange={this.handleChange} name="CampoIdentificacion" className="InputRegistroIdentificacion" value={this.state.CampoIdentificacion} />
                         <br />
                         <br />
                         <label className="LabelRegistroEdad">Edad:</label>
                         <br />
-                        <input onChange={this.handleChange} name="CampoEdad" className="InputRegistroEdad" type="number" value={this.state.CampoEdad} />
+                        <input onChange={this.handleChange} name="CampoEdad" className="InputRegistroEdad"  value={this.state.CampoEdad} />
                         <br />
                         <br />
                         <label className="LabelRegistroGenero">Correo electrónico:</label>
                         <br />
-                        <input onChange={this.handleChange} name="CampoGenero" className="InputRegistroGenero" type="text" value={this.state.CampoGenero} />                        <br />
+                        <input onChange={this.handleChange} name="CampoEmail" className="InputRegistroGenero" value={this.state.CampoEmail} />                        <br />
                         <br />
                         <label className="LabelRegistroPassword">Contraseña:</label>
                         <br />
-                        <input onChange={this.handleChange} name="CampoPassword" className="InputRegistroPassword" type="password" value={this.state.CampoPassword} />
+                        <input onChange={this.handleChange} name="CampoPassword" className="InputRegistroPassword"  value={this.state.CampoPassword} />
                         <br />
                         <br />
                         <label className="LabelRegistroConfirmarPassword">Confirmar contraseña:</label>
                         <br />
-                        <input onChange={this.handleChange} name="CampoConfirmarPassword" className="InputRegistroConfirmarPassword" type="password" value={this.state.CampoConfirmarPassword} />
+                        <input onChange={this.handleChange} name="CampoConfirmarPassword" className="InputRegistroConfirmarPassword" value={this.state.CampoConfirmarPassword} />
                         <br />
                         <br />
 
                     </div>
 
                     <div className="BotonesCrearVolver">
-                        <a href="/" className="BotonCrear">Crear Cuenta</a>
+                        <a onClick={this.handleClick}  href="/" className="BotonCrear">Crear Cuenta</a>
                         <a className="BotonRegistroRegresar" href="/">Volver</a>
                     </div>
                 </div>
