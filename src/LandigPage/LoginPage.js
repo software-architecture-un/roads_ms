@@ -3,7 +3,7 @@ import './LoginPage.css';
 import DirectionGraphq from '../conection/IpGraphql';
 
 
-class LoginPage extends React.Component{
+class LoginPage extends React.Component {
 
     state = {
 
@@ -30,15 +30,15 @@ class LoginPage extends React.Component{
 
         const url = DirectionGraphq;
         const opts = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query })
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query })
         };
 
         fetch(url, opts)
-        .then(res => res.json())
-        .then(console.log)
-        .catch(console.error);
+            .then(res => res.json())
+            .then(console.log)
+            .catch(console.error);
         console.log("=====================================================================\n\n")
 
     }
@@ -49,29 +49,29 @@ class LoginPage extends React.Component{
         })
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="LoginPage">
-            <div className="CajaLogin">
-                <h1 className="TituloLogin">Iniciar Sesión</h1>
+                <div className="CajaLogin">
+                    <h1 className="TituloLogin">Iniciar Sesión</h1>
 
-                <div className="ContenedorCamposLogin">
-                    <label className="LabelUsuario">Usuario:</label>
-                    <input name="CampoUsuario" onChange={this.handleChange} className="InputUsuario"  value={this.state.CampoUsuario} type="text"></input>
-                    <br />
-                    <label className="LabelPassword">Contraseña:</label>
-                    <input name="CampoPassword" onChange={this.handleChange} className="InputPassword" value={this.state.CampoPassword} type="password"></input>
-                </div>
+                    <div className="ContenedorCamposLogin">
+                        <label className="LabelUsuario">Usuario:</label>
+                        <input name="CampoUsuario" onChange={this.handleChange} className="InputUsuario" value={this.state.CampoUsuario} type="text"></input>
+                        <br />
+                        <label className="LabelPassword">Contraseña:</label>
+                        <input name="CampoPassword" onChange={this.handleChange} className="InputPassword" value={this.state.CampoPassword} type="password"></input>
+                    </div>
 
-                <div className="BotonesEntrarVolver">
-                    <a onClick={this.handleClick} className="BotonEntrar">Entrar</a>
-                    <a className="BotonRegresar" href="/">Volver</a>
+                    <div className="BotonesEntrarVolver">
+                        <a href="/user" onClick={this.handleClick} className="BotonEntrar">Entrar</a>
+                        <a className="BotonRegresar" href="/">Volver</a>
+                    </div>
                 </div>
             </div>
-        </div>
         );
     }
-} 
+}
 
 
 export default LoginPage;
