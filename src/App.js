@@ -1,10 +1,13 @@
 import React from 'react';
-import MainPage from './LandigPage/MainPage';
+// import MainPage from './LandigPage/MainPage';
+import UserPlace from './User/UserPlace'
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      {/* <MainPage /> */}
+      <UserPlace/>
+
     </div>
   );
 }

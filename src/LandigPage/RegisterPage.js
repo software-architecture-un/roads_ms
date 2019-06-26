@@ -102,10 +102,10 @@ class RegisterPage extends React.Component {
 
                     </div>
 
-                    <div className="BotonesCrearVolver">
-                        <a onClick={this.handleClick}  href="/" className="BotonCrear">Crear Cuenta</a>
-                        <a className="BotonRegistroRegresar" href="/">Volver</a>
-                    </div>
+                        <div className="BotonesCrearVolver">
+                            <a onClick={this.handleClick}  href="/usuario" className="BotonCrear">Crear Cuenta</a>
+                            <a className="BotonRegistroRegresar" href="/">Volver</a>
+                        </div>
                 </div>
 
             </div>
@@ -114,4 +114,3 @@ class RegisterPage extends React.Component {
 }
 
 export default RegisterPage;
-// href="/usuario"
