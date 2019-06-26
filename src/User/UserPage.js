@@ -1,39 +1,87 @@
-import React from 'react';
+import React, {Component} from 'react';
+import IpGraphql from '../conection/IpGraphql';
 
-function UserPage() {
+class UserPage extends Component {
+
+  state = {
+    email:'jjmuesesq@unal.edu.co',    
+    nombre: "",
+    id:"",
+    documento:"",
+    edad:""   
+  }
+
+  componentWillMount(){
+    // let jwt = window.localStorage.getItem('jwt');
+    const query = `
+      mutation {
+        userByEmail(email:
+        {
+            email: "${this.state.email}"
+            
+        })
+        {
+        content
+        {
+            id
+            name
+            document
+            age
+            email
+            password_digest
+        }
+        message
+        status
+        }
+      }
+  `;
+
+    const url = IpGraphql;
+    const opts = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query })
+    };
+  
+    fetch(url, opts)
+      .then(res => res.json(), console.log("PRIMERO YO"))
+      .then(res => {
+        // this.setState({data: res})
+        const nombre = res.data.userByEmail.content.name;
+        this.setState({nombre: nombre})
+
+        const id = res.data.userByEmail.content.id;
+        this.setState({id: id})
+
+        const documento= res.data.userByEmail.content.document;
+        this.setState({documento: documento})
+
+        const edad = res.data.userByEmail.content.age;
+        this.setState({edad: edad})           
+        
+      }, console.log("SEGUNDO YO"))
+      .catch(console.error);
+  }
+
+  render(){
     return (
-        <div className="UserPage">
-            <div className="MenuLateral">
+      <div className="UserPage2">
+        <h1>Prueba usuario logueado</h1>
 
-            </div>
+        <input value={this.state.email}/>        
+        <br/>
+        <input value={this.state.nombre}/>       
+        <br/>
+        <input value={this.state.edad}/>        
+        <br/>
+        <input value={this.state.documento}/>
+        <br/>
+        <input value={this.state.id}/>
+        <br/>        
 
-            <div className="PanelPrincipal">
-                <div>
-                    <h1>DATOS PERSONALES</h1>
-                </div>
-
-                <div className="ModificacionDatosPersonales">
-                    <div className="LabelsDatosPersonales">
-                        <label className="LabelUserNombre">Nombre:</label>
-                        <label className="LabelUserIdentificacion">Identificacion:</label>
-                        <label className="LabelUserEdad">Edad:</label>
-                        <label className="LabelUserGenero">Genero:</label>
-                        <label className="LabelUserContrasena">Contraseña:</label>
-                        <label className="LabelUserConfirmarContrasena">Confirmar contraseña:</label>
-                    </div>
-
-                    <div className="InputsDatosPersonales">
-                        <input className="InputUserNombre" />
-                        <input className="InputUserIdentificacion" />
-                        <input className="InputUserEdad" />
-                        <input className="InputUserGenero" />
-                        <input className="InputUserContrasena" />
-                        <input className="InputUserConfirmarContrasena" />
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     );
+  }
 }
 
 export default UserPage;

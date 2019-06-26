@@ -64,7 +64,7 @@ class LoginPage extends React.Component {
                     </div>
 
                     <div className="BotonesEntrarVolver">
-                        <a href="/user" onClick={this.handleClick} className="BotonEntrar">Entrar</a>
+                        <a href="/usuario" onClick={this.handleClick} className="BotonEntrar">Entrar</a>
                         <a className="BotonRegresar" href="/">Volver</a>
                     </div>
                 </div>
@@ -76,4 +76,3 @@ class LoginPage extends React.Component {
 
 export default LoginPage;
 
-// href="/usuario"
